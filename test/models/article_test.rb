@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ArtivleTest < ActiveSupport::TestCase
+class ArticleTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
