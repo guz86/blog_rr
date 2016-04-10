@@ -7,7 +7,9 @@ Rails.application.routes.draw do
 # 1 resource :contacts, only: [:create]
 
   resource :contacts, only: [:new, :create], path_names: {:new => ''}
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   get 'terms' => 'pages#terms'
   get 'about' => 'pages#about'
