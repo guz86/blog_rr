@@ -1,7 +1,10 @@
-require 'spec_helper'
+# require 'spec_helper'
+require "rails_helper"
 
-feature "..." do
-  scenario "..." do
-
+feature "Contact Creation" do
+  scenario "allows access to contacts page" do
+    visit '/contacts'
+    
+    expect(page).to have_content 'Contact us'
   end
 end
